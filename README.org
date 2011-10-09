@@ -1,0 +1,58 @@
+* Headings
+
+** heading with properties
+:PROPERTIES:
+:CREATED: <2011-10-09 Sun 15:16>
+:END:
+
+* tables
+
+| *head1*               | *head2* | *head3* |
+|-----------------------+---------+---------|
+| text                  |      42 | -----   |
+| me@server.example.com |      23 | :-)     |
+|-----------------------+---------+---------|
+|                       |      65 |         |
+#+TBLFM: @>$2 = vsum(@I$2..@II$2)
+
+* links
+
+- direct URL: http://tagstore.org
+[[http://tagstore.org][- indirect URL]]
+- direct email: me@example.com
+- [[me@server.com][indirect email]]
+
+* examples
+
+verse:
+#+begin_verse
+This is an example.
+    Second line.
+Very long line with many characters showing the wordwrap feature or the not existing word wrap feature
+#+end_verse
+
+quote:
+#+begin_quote
+This is an example.
+    Second line.
+Very long line with many characters showing the wordwrap feature or the not existing word wrap feature
+#+end_quote
+
+only colon:
+: This is an example.
+:     Second line.
+: Very long line with many characters showing the wordwrap feature or the not existing word wrap feature
+
+non-specific source:
+#+begin_src 
+This is an example.
+    Second line.
+Very long line with many characters showing the wordwrap feature or the not existing word wrap feature
+#+end_src
+
+python source:
+#+begin_src python
+if VALUE and dummy < 42:
+    execute_something("Dummy text", 23)
+#+end_src
+
