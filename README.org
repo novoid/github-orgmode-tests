@@ -24,8 +24,6 @@
 
 * examples
 
-Happened on X200
-
 verse:
 #+begin_verse
 This is an example.
@@ -64,3 +62,17 @@ if VALUE and dummy < 42:
 
 - me_low
 - 2_8
+
+* Orgmode examples
+
+Das hier ist eine Erklärung von dem Ganzen:
+
+:conf: ;; this is ELISP code
+:conf: (foo (bar))
+
+Und in der Org-mode-Datei wird das dann so angewendet:
+
+:org: :PROPERTIES:
+:org: :ID: this-is-an-example
+:org: :END:
+
