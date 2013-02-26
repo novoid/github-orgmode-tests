@@ -1,15 +1,46 @@
+#+TAGS: { FAILS(f) PARTLY(p) WORKS(w) }
 
 *Note:* a complete list of these features including keyboard
   shortcuts, links, and descriptions is available on
   https://github.com/novoid/github-orgmode-tests
 
-| *Feature* | *not worked* | *worked* |
-|-----------+--------------+----------|
-|           |              |          |
+This page demonstrates Org-mode features that are (or are not)
+supported by github which is using an (old) version of [[https://github.com/bdewey/org-ruby][org-ruby]].
+
+| *Feature*                           | *failed*         | *worked*         |
+|-------------------------------------+------------------+------------------|
+| Text formatting                     |                  | <2013-02-26 Tue> |
+| simple lists                        |                  | <2013-02-26 Tue> |
+| lists with checkboxes               | <2013-02-26 Tue> |                  |
+| nested lists                        | <2013-02-26 Tue> |                  |
+| Headings with TODO items            | <2013-02-26 Tue> |                  |
+| Drawers                             | <2013-02-26 Tue> |                  |
+| simple blocks                       |                  | <2013-02-26 Tue> |
+| simple links                        |                  | <2013-02-26 Tue> |
+| footnotes                           | <2013-02-26 Tue> |                  |
+| custom links                        | <2013-02-26 Tue> |                  |
+| link to ID                          | <2013-02-26 Tue> |                  |
+| states                              | <2013-02-26 Tue> |                  |
+| chain siblings                      | <2013-02-26 Tue> |                  |
+| priorities                          |                  | <2013-02-26 Tue> |
+| subtask statistics                  |                  | <2013-02-26 Tue> |
+| tags                                | <2013-02-26 Tue> |                  |
+| simple tables                       |                  | <2013-02-26 Tue> |
+| simple tables formatting            | <2013-02-26 Tue> |                  |
+| hiding TBLFM                        |                  | <2013-02-26 Tue> |
+| aligning table columns              | <2013-02-26 Tue> |                  |
+| column view                         | <2013-02-26 Tue> |                  |
+| showing timestamps                  |                  | <2013-02-26 Tue> |
+| showing clocking summaries          |                  | <2013-02-26 Tue> |
+| showing clocking drawers            | <2013-02-26 Tue> |                  |
+| simple SRC blocks                   |                  | <2013-02-26 Tue> |
+| SRC block formatting as verbatim    | <2013-02-26 Tue> |                  |
+| SRC blocks with syntax highlighting | <2013-02-26 Tue> |                  |
+| LaTeX support                       | <2013-02-26 Tue> |                  |
 
 
 * Featuretest
-** Text formatting
+** Text formatting                                                   :WORKS:
 
 - *bold*
 - /italic/
@@ -29,7 +60,7 @@ line
 comment
 #+END_COMMENT
 
-** Lists
+** Lists                                                            :PARTLY:
 
 simple list:
 - Emacs
@@ -50,7 +81,7 @@ enumerate:
   3. [ ] repaint garage
   4. [ ] put stuff back in
 
-** Headings with TODO items
+** Headings with TODO items                                          :FAILS:
 
 *** TODO Clean out garage [0/4]
 
@@ -67,14 +98,14 @@ enumerate:
 
 **** TODO put stuff back in
 
-** Drawers
+** Drawers                                                           :FAILS:
+
 *** NEXT Test with category property                                :mytag:
 :PROPERTIES:
 :CATEGORY: mycategory
 :END:
 
-
-** blocks ([[http://orgmode.org/org.html#Blocks][docu]])
+** simple blocks ([[http://orgmode.org/org.html#Blocks][docu]])                                              :WORKS:
 
 #+BEGIN_EXAMPLE
 Some example from a text file.
@@ -82,12 +113,9 @@ Some example from a text file.
 
 - more of it in the Babel section later on
 
-** links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]
+** links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                     :PARTLY:
 
-: [[link]]
-: [[link][description]]
-
-target:
+todo: target
 : # <<link>>
 
 - id:myexampleid
@@ -112,7 +140,7 @@ target:
 
 foo bar
 
-** states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])
+** states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                                        :PARTLY:
 
 *** making dependencies explicit
 
@@ -138,11 +166,11 @@ foo bar
 ***** DONE subtask 1
 ***** TODO subtask 2
 ***** TODO subtask 3
-** tags [[http://orgmode.org/org.html#Tags][(docu)]]
+** tags [[http://orgmode.org/org.html#Tags][(docu)]]                                                       :FAILS:
 
 *** example                                                           :tag:
 
-** tables simple [[http://orgmode.org/org.html#Tables][(docu)]]
+** tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                                             :PARTLY:
 
 | *Heading1* | *head2* |
 |------------+---------|
@@ -151,7 +179,7 @@ foo bar
 |------------+---------|
 | end        |   99.99 |
 
-** tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])
+** tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                  :PARTLY:
 
 #+TBLNAME: mydemo-USD-EUR-rate
 | *US-Dollar* |      *EUR* |
@@ -169,7 +197,7 @@ foo bar
 |            |                        |       | 91.36 |
 #+TBLFM: @>$4=vsum(@I$4..@II$4);%.2f::@3$4=@3$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f::@4$4=@4$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f::@5$4=@5$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f::@6$4=@6$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f
 
-** column view ([[http://orgmode.org/org.html#Column-view][docu]])
+** column view ([[http://orgmode.org/org.html#Column-view][docu]])                                                :FAILS:
 :PROPERTIES:
 :COLUMNS:  %25ITEM %TAGS %PRIORITY %TODO %10MyProperties
 :MyProperties_ALL: "Thomas" "Maria" "Susan" "Joe"
@@ -185,12 +213,12 @@ foo bar
 :MyProperties: Thomas
 :END:
 
-** dates & time ([[http://orgmode.org/org.html#Dates-and-Times][docu]])
+** dates & time ([[http://orgmode.org/org.html#Dates-and-Times][docu]])                                               :WORKS:
 
 - ~C-c .~    *insert active* <2012-04-23 Mon>  (with ~C-u~: <2012-04-23 Mon 19:14>)
 - ~C-c !~    insert inactive [2012-04-23 Mon]  (with ~C-u~: [2012-04-23 Mon 19:14])
 
-** clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])
+** clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])                                             :PARTLY:
 
 *** example sub-hierarchy with report
 
@@ -215,14 +243,14 @@ CLOCK: [2012-11-18 Sun 19:26]--[2012-11-18 Sun 19:33] =>  0:07
 CLOCK: [2012-11-17 Sat 16:25]--[2012-11-18 Sun 19:25] => 27:00
 :END:
 
-** source code ([[http://orgmode.org/org.html#Working-With-Source-Code][docu]])
+** source code ([[http://orgmode.org/org.html#Working-With-Source-Code][docu]])                                               :PARTLY:
 
 #+BEGIN_SRC python
   def foo(argument):
        print "Hello World"
  #+END_SRC
 
-** babel ([[http://orgmode.org/org.html#Library-of-Babel][docu]])
+** babel ([[http://orgmode.org/org.html#Library-of-Babel][docu]])                                                      :FAILS:
 
 *** babel simple ([[http://orgmode.org/org.html#Working-With-Source-Code][doc]])
 
@@ -275,7 +303,7 @@ Using result set "directories" from above as "dirs" in R below:
   pie(dirs[,1], labels = dirs[,2])
 #+end_src
 
-** LaTeX ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])
+** LaTeX ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                                                      :FAILS:
 
 Greek characters \alpha \beta \phi \LaTeX{}  $\varphi$
 
