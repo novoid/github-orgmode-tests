@@ -9,7 +9,7 @@ supported by github which is using an (old) version of [[https://github.com/bdew
 
 | *Feature*                           | *failed*         | *worked*         |
 |-------------------------------------+------------------+------------------|
-| Text formatting                     |                  | <2013-02-26 Tue> |
+| Text formatting                     | <2013-02-26 Tue> |                  |
 | simple lists                        |                  | <2013-02-26 Tue> |
 | lists with checkboxes               | <2013-02-26 Tue> |                  |
 | nested lists                        | <2013-02-26 Tue> |                  |
@@ -40,7 +40,7 @@ supported by github which is using an (old) version of [[https://github.com/bdew
 
 
 * Featuretest
-** Text formatting                                                   :WORKS:
+** Text formatting                                                  :PARTLY:
 
 - *bold*
 - /italic/
