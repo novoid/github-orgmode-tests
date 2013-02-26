@@ -7,36 +7,36 @@
 This page demonstrates Org-mode features that are (or are not)
 supported by github which is using an (old) version of [[https://github.com/bdewey/org-ruby][org-ruby]].
 
-| *Feature*                           | *failed*         | *worked*         |
-|-------------------------------------+------------------+------------------|
-| Text formatting                     | <2013-02-26 Tue> |                  |
-| simple lists                        |                  | <2013-02-26 Tue> |
-| lists with checkboxes               | <2013-02-26 Tue> |                  |
-| nested lists                        | <2013-02-26 Tue> |                  |
-| Headings with TODO items            | <2013-02-26 Tue> |                  |
-| Drawers                             | <2013-02-26 Tue> |                  |
-| simple blocks                       |                  | <2013-02-26 Tue> |
-| simple links                        |                  | <2013-02-26 Tue> |
-| footnotes                           | <2013-02-26 Tue> |                  |
-| custom links                        | <2013-02-26 Tue> |                  |
-| link to ID                          | <2013-02-26 Tue> |                  |
-| states                              | <2013-02-26 Tue> |                  |
-| chain siblings                      | <2013-02-26 Tue> |                  |
-| priorities                          |                  | <2013-02-26 Tue> |
-| subtask statistics                  |                  | <2013-02-26 Tue> |
-| tags                                | <2013-02-26 Tue> |                  |
-| simple tables                       |                  | <2013-02-26 Tue> |
-| simple tables formatting            | <2013-02-26 Tue> |                  |
-| hiding TBLFM                        |                  | <2013-02-26 Tue> |
-| aligning table columns              | <2013-02-26 Tue> |                  |
-| column view                         | <2013-02-26 Tue> |                  |
-| showing timestamps                  |                  | <2013-02-26 Tue> |
-| showing clocking summaries          |                  | <2013-02-26 Tue> |
-| showing clocking drawers            | <2013-02-26 Tue> |                  |
-| simple SRC blocks                   |                  | <2013-02-26 Tue> |
-| SRC block formatting as verbatim    | <2013-02-26 Tue> |                  |
-| SRC blocks with syntax highlighting | <2013-02-26 Tue> |                  |
-| LaTeX support                       | <2013-02-26 Tue> |                  |
+| *Feature*                           | *failed or partly failed* | *worked*         |
+|-------------------------------------+---------------------------+------------------|
+| Text formatting                     | <2013-02-26 Tue>          |                  |
+| simple lists                        |                           | <2013-02-26 Tue> |
+| lists with checkboxes               | <2013-02-26 Tue>          |                  |
+| nested lists                        | <2013-02-26 Tue>          |                  |
+| Headings with TODO items            | <2013-02-26 Tue>          |                  |
+| Drawers                             | <2013-02-26 Tue>          |                  |
+| simple blocks                       |                           | <2013-02-26 Tue> |
+| simple links                        |                           | <2013-02-26 Tue> |
+| footnotes                           | <2013-02-26 Tue>          |                  |
+| custom links                        | <2013-02-26 Tue>          |                  |
+| link to ID                          | <2013-02-26 Tue>          |                  |
+| states                              | <2013-02-26 Tue>          |                  |
+| chain siblings                      | <2013-02-26 Tue>          |                  |
+| priorities                          |                           | <2013-02-26 Tue> |
+| subtask statistics                  |                           | <2013-02-26 Tue> |
+| tags                                | <2013-02-26 Tue>          |                  |
+| simple tables                       |                           | <2013-02-26 Tue> |
+| simple tables formatting            | <2013-02-26 Tue>          |                  |
+| hiding TBLFM                        |                           | <2013-02-26 Tue> |
+| aligning table columns              | <2013-02-26 Tue>          |                  |
+| column view                         | <2013-02-26 Tue>          |                  |
+| showing timestamps                  |                           | <2013-02-26 Tue> |
+| showing clocking summaries          |                           | <2013-02-26 Tue> |
+| showing clocking drawers            | <2013-02-26 Tue>          |                  |
+| simple SRC blocks                   |                           | <2013-02-26 Tue> |
+| SRC block formatting as verbatim    | <2013-02-26 Tue>          |                  |
+| SRC blocks with syntax highlighting | <2013-02-26 Tue>          |                  |
+| LaTeX support                       | <2013-02-26 Tue>          |                  |
 
 
 * Featuretest
