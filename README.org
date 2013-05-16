@@ -10,6 +10,7 @@ supported by github which is using an (old) version of [[https://github.com/bdew
 | *Feature*                           | *failed*         | *worked*         |
 |-------------------------------------+------------------+------------------|
 | simple text formatting              |                  | <2013-02-26 Tue> |
+| simple text formatting combined     | <2013-05-16 Thu> |                  |
 | multi line comment block            | <2013-02-26 Tue> |                  |
 | simple lists                        |                  | <2013-02-26 Tue> |
 | lists with checkboxes               | <2013-02-26 Tue> |                  |
