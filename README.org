@@ -61,6 +61,19 @@ line
 comment
 #+END_COMMENT
 
+*** combinations
+
+- ~command *bold*~
+- *bold ~command~*
+- /italic *bold*/
+- *bold /italic/*
+- =code *bold*=
+- *bold =code=*
+- _underline *bold*_
+- *bold _underline_*
+
+: small example *bold* _underline_ /italic/ ~command~ =code= http://orgmode.org
+
 ** Lists                                                            :PARTLY:
 
 simple list:
