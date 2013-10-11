@@ -396,6 +396,9 @@ if VALUE and dummy < 42:
 
 - me_low
 - 2_8
+- ~*.org_archive~
+- ~*.org\_archive~
+- *.org\_archive
 
 ** Orgmode examples
 
