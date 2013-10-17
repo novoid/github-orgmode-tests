@@ -10,35 +10,37 @@ supported by github which is using an (old) version of [[https://github.com/bdew
 | *Feature*                           | *failed*         | *worked*         |
 |-------------------------------------+------------------+------------------|
 | simple text formatting              |                  | <2013-02-26 Tue> |
-| simple text formatting combined     | <2013-05-16 Thu> |                  |
-| multi line comment block            | <2013-02-26 Tue> |                  |
+| simple text formatting combined     | <2013-10-17 Thu> |                  |
+| multi line comment block            | <2013-10-17 Thu> |                  |
 | simple lists                        |                  | <2013-02-26 Tue> |
-| lists with checkboxes               | <2013-02-26 Tue> |                  |
-| nested lists                        | <2013-02-26 Tue> |                  |
-| Headings with TODO items            | <2013-02-26 Tue> |                  |
-| Drawers                             | <2013-02-26 Tue> |                  |
+| lists with checkboxes               | <2013-10-17 Thu> |                  |
+| nested lists                        |                  | <2013-10-17 Thu> |
+| Headings with TODO items            | <2013-10-17 Thu> |                  |
+| hide Drawers                        |                  | <2013-10-17 Thu> |
 | simple blocks                       |                  | <2013-02-26 Tue> |
 | simple links                        |                  | <2013-02-26 Tue> |
-| footnotes                           | <2013-02-26 Tue> |                  |
-| custom links                        | <2013-02-26 Tue> |                  |
-| link to ID                          | <2013-02-26 Tue> |                  |
-| states                              | <2013-02-26 Tue> |                  |
-| chain siblings                      | <2013-02-26 Tue> |                  |
+| footnotes                           | <2013-10-17 Thu> |                  |
+| custom links                        | <2013-10-17 Thu> |                  |
+| link to ID                          | <2013-10-17 Thu> |                  |
+| states                              | <2013-10-17 Thu> |                  |
+| chain siblings                      | <2013-10-17 Thu> |                  |
 | priorities                          |                  | <2013-02-26 Tue> |
 | subtask statistics                  |                  | <2013-02-26 Tue> |
-| tags                                | <2013-02-26 Tue> |                  |
+| tags                                | <2013-10-17 Thu> |                  |
 | simple tables                       |                  | <2013-02-26 Tue> |
-| simple tables formatting            | <2013-02-26 Tue> |                  |
+| tables formatting: bold             |                  | <2013-10-17 Thu> |
+| tables formatting: align numbers    | <2013-10-17 Thu> |                  |
 | hiding TBLFM                        |                  | <2013-02-26 Tue> |
-| aligning table columns              | <2013-02-26 Tue> |                  |
-| column view                         | <2013-02-26 Tue> |                  |
+| column view                         | <2013-10-17 Thu> |                  |
 | showing timestamps                  |                  | <2013-02-26 Tue> |
 | showing clocking summaries          |                  | <2013-02-26 Tue> |
-| showing clocking drawers            | <2013-02-26 Tue> |                  |
+| showing clocking drawers            | <2013-10-17 Thu> |                  |
 | simple SRC blocks                   |                  | <2013-02-26 Tue> |
 | SRC block formatting as verbatim    | <2013-02-26 Tue> |                  |
 | SRC blocks with syntax highlighting | <2013-02-26 Tue> |                  |
-| LaTeX support                       | <2013-02-26 Tue> |                  |
+| LaTeX \alpha \beta \phi             |                  | <2013-10-17 Thu> |
+| LaTeX simple formulas               | <2013-10-17 Thu> |                  |
+| LaTeX blocks                        | <2013-10-17 Thu> |                  |
 
 
 * Featuretest
