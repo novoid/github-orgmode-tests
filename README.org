@@ -10,37 +10,36 @@ supported by github which is using an (old) version of [[https://github.com/bdew
 | *Feature*                           | *failed*         | *worked*         |
 |-------------------------------------+------------------+------------------|
 | simple text formatting              |                  | <2013-02-26 Tue> |
-| simple text formatting combined     | <2013-10-17 Thu> |                  |
-| multi line comment block            | <2013-10-17 Thu> |                  |
+| multi line comment block            | <2014-04-13 Sun> |                  |
 | simple lists                        |                  | <2013-02-26 Tue> |
-| lists with checkboxes               | <2013-10-17 Thu> |                  |
+| lists with checkboxes               | <2014-04-13 Sun> |                  |
 | nested lists                        |                  | <2013-10-17 Thu> |
-| Headings with TODO items            | <2013-10-17 Thu> |                  |
+| Headings with TODO items            | <2014-04-13 Sun> |                  |
 | hide Drawers                        |                  | <2013-10-17 Thu> |
 | simple blocks                       |                  | <2013-02-26 Tue> |
 | simple links                        |                  | <2013-02-26 Tue> |
-| footnotes                           | <2013-10-17 Thu> |                  |
-| custom links                        | <2013-10-17 Thu> |                  |
-| link to ID                          | <2013-10-17 Thu> |                  |
-| states                              | <2013-10-17 Thu> |                  |
-| chain siblings                      | <2013-10-17 Thu> |                  |
+| footnotes                           | <2014-04-13 Sun> |                  |
+| custom links                        | <2014-04-13 Sun> |                  |
+| link to ID                          | <2014-04-13 Sun> |                  |
+| states                              | <2014-04-13 Sun> |                  |
+| chain siblings                      | <2014-04-13 Sun> |                  |
 | priorities                          |                  | <2013-02-26 Tue> |
 | subtask statistics                  |                  | <2013-02-26 Tue> |
-| tags                                | <2013-10-17 Thu> |                  |
+| tags                                | <2014-04-13 Sun> |                  |
 | simple tables                       |                  | <2013-02-26 Tue> |
 | tables formatting: bold             |                  | <2013-10-17 Thu> |
-| tables formatting: align numbers    | <2013-10-17 Thu> |                  |
+| tables formatting: align numbers    | <2014-04-13 Sun> |                  |
 | hiding TBLFM                        |                  | <2013-02-26 Tue> |
-| column view                         | <2013-10-17 Thu> |                  |
+| column view                         | <2014-04-13 Sun> |                  |
 | showing timestamps                  |                  | <2013-02-26 Tue> |
 | showing clocking summaries          |                  | <2013-02-26 Tue> |
-| showing clocking drawers            | <2013-10-17 Thu> |                  |
+| showing clocking drawers            | <2014-04-13 Sun> |                  |
 | simple SRC blocks                   |                  | <2013-02-26 Tue> |
 | SRC block formatting as verbatim    | <2013-02-26 Tue> |                  |
-| SRC blocks with syntax highlighting | <2013-02-26 Tue> |                  |
+| SRC blocks with syntax highlighting |                  | <2014-04-13 Sun> |
 | LaTeX \alpha \beta \phi             |                  | <2013-10-17 Thu> |
-| LaTeX simple formulas               | <2013-10-17 Thu> |                  |
-| LaTeX blocks                        | <2013-10-17 Thu> |                  |
+| LaTeX simple formulas               | <2014-04-13 Sun> |                  |
+| LaTeX blocks                        | <2014-04-13 Sun> |                  |
 
 
 * Featuretest
@@ -64,18 +63,6 @@ line
 comment
 #+END_COMMENT
 
-*** combinations
-
-- ~command *bold*~
-- *bold ~command~*
-- /italic *bold*/
-- *bold /italic/*
-- =code *bold*=
-- *bold =code=*
-- _underline *bold*_
-- *bold _underline_*
-
-: small example *bold* _underline_ /italic/ ~command~ =code= http://orgmode.org
 
 ** Lists                                                            :PARTLY:
 
