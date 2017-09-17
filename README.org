@@ -10,7 +10,8 @@ supported by github which is using an (old) version of [[https://github.com/bdew
 | *Feature*                           | *failed*         | *worked*         |
 |-------------------------------------+------------------+------------------|
 | simple text formatting              |                  | <2013-02-26 Tue> |
-| multi line comment block            | <2014-04-13 Sun> |                  |
+| comment lines                       |                  | <2017-09-17 Sun> |
+| multi line comment block            |                  | <2017-09-17 Sun> |
 | simple lists                        |                  | <2013-02-26 Tue> |
 | lists with checkboxes               | <2014-04-13 Sun> |                  |
 | nested lists                        |                  | <2013-10-17 Thu> |
@@ -117,10 +118,7 @@ Some example from a text file.
 
 - more of it in the Babel section later on
 
-** comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])
-:PROPERTIES:
-:CREATED:  [2017-09-17 Sun 16:24]
-:END:
+** comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])                                                                           :WORKS:
 
 Comment lines:
 
@@ -143,7 +141,7 @@ This is the second line.
 This is the second paragraph.
 #+END_COMMENT
 
-*** Noexport tag of heading                                                              :noexport:
+** Noexport tag of heading                                                          :FAILS:noexport:
 
 This heading is tagged with =noexport= and therefore should not be
 exported. Whatever this means for GitHub. ;-)
