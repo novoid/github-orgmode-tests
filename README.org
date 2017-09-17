@@ -117,6 +117,37 @@ Some example from a text file.
 
 - more of it in the Babel section later on
 
+** comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])
+:PROPERTIES:
+:CREATED:  [2017-09-17 Sun 16:24]
+:END:
+
+Comment lines:
+
+space hash space:
+
+ # This is a comment
+
+space space hash space:
+
+  # This is a comment
+
+-----------
+
+Comment block:
+
+#+BEGIN_COMMENT
+This is a multi line comment block.
+This is the second line.
+
+This is the second paragraph.
+#+END_COMMENT
+
+*** Noexport tag of heading                                                              :noexport:
+
+This heading is tagged with =noexport= and therefore should not be
+exported. Whatever this means for GitHub. ;-)
+
 ** links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                     :PARTLY:
 
 todo: target
@@ -262,7 +293,7 @@ CLOCK: [2012-11-17 Sat 16:25]--[2012-11-18 Sun 19:25] => 27:00
 
 **** shell
 
-#+BEGIN_SRC sh 
+#+BEGIN_SRC sh
 pwd
 #+END_SRC
 
@@ -312,11 +343,11 @@ Using result set "directories" from above as "dirs" in R below:
 Greek characters \alpha \beta \phi \LaTeX{}  $\varphi$
 
 #+BEGIN_LaTeX
-  
+
   \section{Section Title}
-  
+
   This is \emph{emphasized} and $y=x^2$ is an equation.
-  
+
 #+END_LaTeX
 
 
@@ -367,7 +398,7 @@ only colon:
 : Very long line with many characters showing the wordwrap feature or the not existing word wrap feature
 
 non-specific source:
-#+begin_src 
+#+begin_src
 This is an example.
     Second line.
 Very long line with many characters showing the wordwrap feature or the not existing word wrap feature
@@ -401,4 +432,3 @@ Und in der Org-mode-Datei wird das dann so angewendet:
 :org: :PROPERTIES:
 :org: :ID: this-is-an-example
 :org: :END:
-
