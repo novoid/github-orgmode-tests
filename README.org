@@ -5,7 +5,7 @@
   https://github.com/novoid/github-orgmode-tests
 
 This page demonstrates Org-mode features that are (or are not)
-supported by github which is using an (old) version of [[https://github.com/bdewey/org-ruby][org-ruby]].
+supported by github which is using an (old) version of [[https://github.com/wallyqs/org-ruby][org-ruby]].
 
 | *Feature*                           | *failed*         | *worked*         |
 |-------------------------------------+------------------+------------------|
