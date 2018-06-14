@@ -13,34 +13,34 @@ supported by github which is using an (old) version of [[https://github.com/bdew
 | comment lines                       |                  | <2017-09-17 Sun> |
 | multi line comment block            |                  | <2017-09-17 Sun> |
 | simple lists                        |                  | <2013-02-26 Tue> |
-| lists with checkboxes               | <2014-04-13 Sun> |                  |
+| lists with checkboxes               | <2018-06-14 Thu> |                  |
 | nested lists                        |                  | <2013-10-17 Thu> |
-| Headings with TODO items            | <2014-04-13 Sun> |                  |
+| Headings with TODO items            | <2018-06-14 Thu> |                  |
 | hide Drawers                        |                  | <2013-10-17 Thu> |
 | simple blocks                       |                  | <2013-02-26 Tue> |
 | simple links                        |                  | <2013-02-26 Tue> |
-| footnotes                           | <2014-04-13 Sun> |                  |
-| custom links                        | <2014-04-13 Sun> |                  |
-| link to ID                          | <2014-04-13 Sun> |                  |
-| states                              | <2014-04-13 Sun> |                  |
-| chain siblings                      | <2014-04-13 Sun> |                  |
+| footnotes                           | <2018-06-14 Thu> |                  |
+| custom links                        | <2018-06-14 Thu> |                  |
+| link to ID                          | <2018-06-14 Thu> |                  |
+| states                              | <2018-06-14 Thu> |                  |
+| chain siblings                      | <2018-06-14 Thu> |                  |
 | priorities                          |                  | <2013-02-26 Tue> |
 | subtask statistics                  |                  | <2013-02-26 Tue> |
-| tags                                | <2014-04-13 Sun> |                  |
+| tags                                | <2018-06-14 Thu> |                  |
 | simple tables                       |                  | <2013-02-26 Tue> |
 | tables formatting: bold             |                  | <2013-10-17 Thu> |
-| tables formatting: align numbers    | <2014-04-13 Sun> |                  |
+| tables formatting: align numbers    | <2018-06-14 Thu> |                  |
 | hiding TBLFM                        |                  | <2013-02-26 Tue> |
-| column view                         | <2014-04-13 Sun> |                  |
+| column view                         | <2018-06-14 Thu> |                  |
 | showing timestamps                  |                  | <2013-02-26 Tue> |
 | showing clocking summaries          |                  | <2013-02-26 Tue> |
-| showing clocking drawers            | <2014-04-13 Sun> |                  |
+| showing clocking drawers            | <2018-06-14 Thu> |                  |
 | simple SRC blocks                   |                  | <2013-02-26 Tue> |
-| SRC block formatting as verbatim    | <2013-02-26 Tue> |                  |
+| SRC block formatting as verbatim    | <2018-06-14 Thu> |                  |
 | SRC blocks with syntax highlighting |                  | <2014-04-13 Sun> |
 | LaTeX \alpha \beta \phi             |                  | <2013-10-17 Thu> |
-| LaTeX simple formulas               | <2014-04-13 Sun> |                  |
-| LaTeX blocks                        | <2014-04-13 Sun> |                  |
+| LaTeX simple formulas               | <2018-06-14 Thu> |                  |
+| LaTeX blocks                        | <2018-06-14 Thu> |                  |
 
 
 * Featuretest
