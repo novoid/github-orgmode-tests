@@ -1,4 +1,5 @@
 #+TAGS: { FAILS(f) PARTLY(p) WORKS(w) }
+#+EXPORT_EXCLUDE_TAGS: noexport
 
 *Note:* a complete list of these features including keyboard
   shortcuts, links, and descriptions is available on
@@ -141,12 +142,14 @@ This is the second line.
 This is the second paragraph.
 #+END_COMMENT
 
-** Noexport tag of heading                                                          :FAILS:noexport:
+** Noexport tag of heading                                                          :WORKS:noexport:
 
-This heading is tagged with =noexport= and therefore should not be
-exported. Whatever this means for GitHub. ;-)
+The document needs to explicitly set the tag used for no export, as is done at
+the top of this document (it's set to ~noexport~).
 
-** links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                     :PARTLY:
+Tagging a heading with the tag hides the section when opening the on the site.
+
+** links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                      :PARTLY:
 
 todo: target
 : # <<link>>
