@@ -13,34 +13,34 @@ supported by github which is using an (old) version of [[https://github.com/wall
 | comment lines                       |                  | <2017-09-17 Sun> |
 | multi line comment block            |                  | <2017-09-17 Sun> |
 | simple lists                        |                  | <2013-02-26 Tue> |
-| lists with checkboxes               | <2018-06-14 Thu> |                  |
+| lists with checkboxes               | <2020-05-03 Sun> |                  |
 | nested lists                        |                  | <2013-10-17 Thu> |
-| Headings with TODO items            | <2018-06-14 Thu> |                  |
+| Headings with TODO items            | <2020-05-03 Sun> |                  |
 | hide Drawers                        |                  | <2013-10-17 Thu> |
 | simple blocks                       |                  | <2013-02-26 Tue> |
 | simple links                        |                  | <2013-02-26 Tue> |
-| footnotes                           | <2018-06-14 Thu> |                  |
-| custom links                        | <2018-06-14 Thu> |                  |
-| link to ID                          | <2018-06-14 Thu> |                  |
-| states                              | <2018-06-14 Thu> |                  |
-| chain siblings                      | <2018-06-14 Thu> |                  |
+| footnotes                           | <2020-05-03 Sun> |                  |
+| custom links                        | <2020-05-03 Sun> |                  |
+| link to ID                          | <2020-05-03 Sun> |                  |
+| states                              | <2020-05-03 Sun> |                  |
+| chain siblings                      | <2020-05-03 Sun> |                  |
 | priorities                          |                  | <2013-02-26 Tue> |
 | subtask statistics                  |                  | <2013-02-26 Tue> |
-| tags                                | <2018-06-14 Thu> |                  |
+| tags                                | <2020-05-03 Sun> |                  |
 | simple tables                       |                  | <2013-02-26 Tue> |
 | tables formatting: bold             |                  | <2013-10-17 Thu> |
-| tables formatting: align numbers    | <2018-06-14 Thu> |                  |
+| tables formatting: align numbers    | <2020-05-03 Sun> |                  |
 | hiding TBLFM                        |                  | <2013-02-26 Tue> |
-| column view                         | <2018-06-14 Thu> |                  |
+| column view                         | <2020-05-03 Sun> |                  |
 | showing timestamps                  |                  | <2013-02-26 Tue> |
 | showing clocking summaries          |                  | <2013-02-26 Tue> |
-| showing clocking drawers            | <2018-06-14 Thu> |                  |
+| showing clocking drawers            | <2020-05-03 Sun> |                  |
 | simple SRC blocks                   |                  | <2013-02-26 Tue> |
-| SRC block formatting as verbatim    | <2018-06-14 Thu> |                  |
+| SRC block formatting as verbatim    | <2020-05-03 Sun> |                  |
 | SRC blocks with syntax highlighting |                  | <2014-04-13 Sun> |
 | LaTeX \alpha \beta \phi             |                  | <2013-10-17 Thu> |
-| LaTeX simple formulas               | <2018-06-14 Thu> |                  |
-| LaTeX blocks                        | <2018-06-14 Thu> |                  |
+| LaTeX simple formulas               | <2020-05-03 Sun> |                  |
+| LaTeX blocks                        | <2020-05-03 Sun> |                  |
 
 
 * Featuretest
