@@ -18,6 +18,7 @@ supported by github which is using an (old) version of [[https://github.com/wall
 | nested lists                        |                  | <2013-10-17 Thu> |
 | Headings with TODO items            | <2020-05-03 Sun> |                  |
 | hide Drawers                        |                  | <2013-10-17 Thu> |
+| Noexport tag of heading             | <2020-05-03 Sun> |                  |
 | simple blocks                       |                  | <2013-02-26 Tue> |
 | simple links                        |                  | <2013-02-26 Tue> |
 | footnotes                           | <2020-05-03 Sun> |                  |
