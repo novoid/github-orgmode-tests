@@ -64,6 +64,10 @@ Last GitHub feature render check and last table update: <2020-10-15 Thu>
 
 ** Lists                                                            :PARTLY:
 
+- MISSING:
+  - Checkbox rendering/alignment
+  - Reusing same enumerate bullet symbols (dash, numbers, ...)
+
 simple list:
 - Org mode
 - Lists
@@ -89,6 +93,9 @@ mixed with checkboxes:
 
 ** Headings with TODO items                                          :FAILS:
 
+- MISSING
+  - display of TODO keywords
+
 *** TODO Clean out garage [0/4]
 
 **** TODO get stuff out
@@ -105,6 +112,9 @@ mixed with checkboxes:
 **** TODO put stuff back in
 
 ** Drawers                                                           :FAILS:
+
+- MISSING:
+  - rendering of drawers
 
 *** NEXT Test with category property                                :mytag:
 :PROPERTIES:
@@ -141,6 +151,9 @@ Second line within this block.
 :PROPERTIES:
 :CREATED:  [2020-10-15 Thu 11:52]
 :END:
+
+- MISSING:
+  - rendering of the block
 
 #+BEGIN_VERSE
 An example in an VERSE block.
@@ -250,6 +263,9 @@ Second line within this block.
 :CREATED:  [2020-10-15 Thu 11:52]
 :END:
 
+- MISSING:
+  - rendering of the block
+
 #+BEGIN_HTML
 <p>
 This is a paragraph with
@@ -263,11 +279,13 @@ within.
 :CREATED:  [2020-10-15 Thu 11:53]
 :END:
 
+- MISSING:
+  - rendering of the block
+  - some special characters
+
 - Greek characters  
   - Working outside of block: \alpha \beta \phi
   - not working: \LaTeX{}  $\varphi$
-
-LaTeX block is not rendered at all:
 
 #+BEGIN_LATEX
 \section{Section Title}
@@ -286,6 +304,9 @@ Greek characters \alpha \beta \phi \LaTeX{}  $\varphi$
 :PROPERTIES:
 :CREATED:  [2020-10-15 Thu 11:53]
 :END:
+
+- MISSING:
+  - rendering of the block
 
 Notes blocks are *not standard Org mode*. However, =org-reveal= is using
 it for handout notes so I would like to include it here.
@@ -329,6 +350,14 @@ This whole heading is omitted from being rendered on GitHub.
 
 ** links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                      :PARTLY:
 
+- MISSING:
+  - =<<link>>=
+  - following =id:= links
+  - custom links
+    - without your Emacs config, those links are impossible to follow
+    - rendering somehow would be fine
+  - footnotes
+
 todo: target
 : # <<link>>
 
@@ -358,6 +387,10 @@ foo bar
 
 ** states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                                        :PARTLY:
 
+- MISSING:
+  - todo keywords
+  - dependencies from within drawers
+
 *** making dependencies explicit
 
 **** example with chain siblings
@@ -384,11 +417,15 @@ foo bar
 ***** TODO subtask 3
 ** tags [[http://orgmode.org/org.html#Tags][(docu)]]                                                       :FAILS:
 
+- MISSING:
+  - rendering tags
+
 *** example                                                           :tag:
 
 ** tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                                             :PARTLY:
 
-Works but missing number alignment:
+- MISSING:
+  - number alignment
 
 | *Heading1* | *head2* |
 |------------+---------|
@@ -399,7 +436,8 @@ Works but missing number alignment:
 
 ** tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                  :PARTLY:
 
-Tables are concatenated unfortunately and alignment fails.
+- MISSING:
+  - Tables are concatenated unfortunately and alignment fails.
 
 #+TBLNAME: mydemo-USD-EUR-rate
 | *US-Dollar* |      *EUR* |
@@ -423,6 +461,9 @@ Tables are concatenated unfortunately and alignment fails.
 :MyProperties_ALL: "Thomas" "Maria" "Susan" "Joe"
 :END:
 
+- MISSING:
+  - no support for those things
+
 *** example sub-item                                               :mytag1:
 :PROPERTIES:
 :MyProperties: Susan
@@ -439,6 +480,9 @@ Tables are concatenated unfortunately and alignment fails.
 - ~C-c !~    insert inactive [2012-04-23 Mon]  (with ~C-u~: [2012-04-23 Mon 19:14])
 
 ** clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])                                             :PARTLY:
+
+- MISSING:
+  - drawer information
 
 *** example sub-hierarchy with report
 
@@ -465,6 +509,11 @@ CLOCK: [2012-11-17 Sat 16:25]--[2012-11-18 Sun 19:25] => 27:00
 
 
 * MISC Ad-Hoc Testing
+
+This sub-hierarchy is here to test specific stuff.
+
+*You can ignore everything starting from here.*
+
 ** Headings
 
 ** heading with properties
