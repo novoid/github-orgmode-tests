@@ -112,13 +112,88 @@ enumerate:
 :CATEGORY: mycategory
 :END:
 
-** simple blocks ([[http://orgmode.org/org.html#Blocks][docu]])                                              :WORKS:
-
-#+BEGIN_EXAMPLE
-Some example from a text file.
-#+END_EXAMPLE
+** blocks ([[http://orgmode.org/org.html#Blocks][docu]])                                                                            :PARTLY:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:18]
+:END:
 
 - more of it in the Babel section later on
+
+*** EXAMPLE block
+
+#+BEGIN_EXAMPLE
+An example in an EXAMPLE block.
+Second line within this block.
+#+END_EXAMPLE
+
+*** QUOTE block
+
+#+BEGIN_QUOTE
+An example in an QUOTE block.
+Second line within this block.
+#+END_QUOTE
+
+*** VERSE block
+
+#+BEGIN_VERSE
+An example in an VERSE block.
+Second line within this block.
+#+END_VERSE
+
+*** SRC block
+
+#+BEGIN_SRC python
+  def my_test(myvar: str = 'foo bar'):
+      """
+      This is an example function.
+
+      @type  myvar: str = 'foo bar': number
+      @param myvar: str = 'foo bar': FIXXME
+      """
+
+      mynewvar: str = myvar + ' additional content'
+      return mynewvar
+
+  print("Hello " + my_text('Europe!'))
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+(message (concat "Hello" "Europe!")) ;; inline comment
+#+END_SRC
+
+*** QUOTE block
+
+#+BEGIN_QUOTE
+An example in an QUOTE block.
+Second line within this block.
+#+END_QUOTE
+
+*** HTML block
+
+#+BEGIN_EXAMPLE
+An example in an EXAMPLE block.
+Second line within this block.
+#+END_EXAMPLE
+
+
+
+*** LATEX block
+
+#+BEGIN_LATEX
+An example in an LATEX block.
+Second line within this block.
+\alpha $x=42y$
+#+END_LATEX
+
+*** NOTES block
+
+Notes blocks are not standard Org mode. However, =org-reveal= is using
+it for handout notes so I would like to include it here.
+
+#+BEGIN_NOTES
+An example in an NOTES block.
+Second line within this block.
+#+END_NOTES
 
 ** comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])                                                                           :WORKS:
 
