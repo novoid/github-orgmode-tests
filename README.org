@@ -10,11 +10,11 @@ supported by github which is using an (old) version of [[https://github.com/wall
 
 Last GitHub feature render check and last table update: <2020-10-15 Thu> 
 
-# Following line causes my Org to display column view mode instead of re-generating the table:
+# FIXXME 2020-10-15: Following line causes my Org to display column view mode instead of re-generating the filtered table:
 # :exclude-tags "example" 
 
-#+BEGIN: columnview :id global :match "WORKS|FAILS|PARTLY" :format "%ITEM(What) %TAGS(Tags)"
-| What                                         | Tags             |
+#+BEGIN: columnview :id "Featuretest" :match "WORKS|FAILS|PARTLY" :format "%ITEM(Feature) %TAGS(status)"
+| Feature                                      | status           |
 |----------------------------------------------+------------------|
 | Text formatting                              | :WORKS:          |
 | Lists                                        | :PARTLY:         |
@@ -31,42 +31,25 @@ Last GitHub feature render check and last table update: <2020-10-15 Thu>
 | ditaa                                        | :WORKS:          |
 | session with shell and R                     | :WORKS:          |
 | QUOTE block                                  | :WORKS:          |
-| HTML block                                   |                  |
+| HTML block                                   | :FAILS:          |
 | LATEX block ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                           | :FAILS:          |
 | NOTES block                                  | :FAILS:          |
 | comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])                              | :WORKS:          |
 | Noexport tag of heading                      | :WORKS:noexport: |
 | links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                 | :PARTLY:         |
-| heading with PROPERTIES drawer containing ID |                  |
 | states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                    | :PARTLY:         |
-| making dependencies explicit                 |                  |
-| example with chain siblings                  |                  |
-| buy bike                                     |                  |
-| take tour                                    |                  |
-| goto hospital                                |                  |
-| priorities ([[http://orgmode.org/org.html#Priorities][docu]])                            |                  |
-| example                                      |                  |
-| example                                      |                  |
-| breaking down in subtasks ([[http://orgmode.org/org.html#Breaking-down-tasks][docu]])             |                  |
-| example                                      |                  |
-| subtask 1                                    |                  |
-| subtask 2                                    |                  |
-| subtask 3                                    |                  |
 | tags [[http://orgmode.org/org.html#Tags][(docu)]]                                  | :FAILS:          |
-| example                                      | :tag:            |
 | tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                         | :PARTLY:         |
 | tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])              | :PARTLY:         |
 | column view ([[http://orgmode.org/org.html#Column-view][docu]])                           | :FAILS:          |
-| example sub-item                             | :mytag1:         |
-| another example                              | :mytag2:         |
 | dates & time ([[http://orgmode.org/org.html#Dates-and-Times][docu]])                          | :WORKS:          |
 | clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])                         | :PARTLY:         |
-| example sub-hierarchy with report            |                  |
-| example item                                 |                  |
-| another item                                 |                  |
 #+END:
 
 * Featuretest
+:PROPERTIES:
+:ID:       Featuretest
+:END:
 ** Text formatting                                                                           :WORKS:
 
 - *bold*
@@ -262,7 +245,7 @@ An example in an QUOTE block.
 Second line within this block.
 #+END_QUOTE
 
-*** HTML block
+*** HTML block                                                                              :FAILS:
 :PROPERTIES:
 :CREATED:  [2020-10-15 Thu 11:52]
 :END:
@@ -280,7 +263,11 @@ within.
 :CREATED:  [2020-10-15 Thu 11:53]
 :END:
 
-Greek characters \alpha \beta \phi \LaTeX{}  $\varphi$
+- Greek characters  
+  - Working outside of block: \alpha \beta \phi
+  - not working: \LaTeX{}  $\varphi$
+
+LaTeX block is not rendered at all:
 
 #+BEGIN_LATEX
 \section{Section Title}
