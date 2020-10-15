@@ -1,4 +1,4 @@
-#+TAGS: { FAILS(f) PARTLY(p) WORKS(w) }
+#+TAGS: { FAILS(f) PARTLY(p) WORKS(w) example(e)}
 #+EXPORT_EXCLUDE_TAGS: noexport
 
 *Note:* a complete list of these features including keyboard
@@ -8,45 +8,66 @@
 This page demonstrates Org-mode features that are (or are not)
 supported by github which is using an (old) version of [[https://github.com/wallyqs/org-ruby][org-ruby]].
 
-| *Feature*                           | *failed*         | *worked*         |
-|-------------------------------------+------------------+------------------|
-| simple text formatting              |                  | <2013-02-26 Tue> |
-| comment lines                       |                  | <2017-09-17 Sun> |
-| multi line comment block            |                  | <2017-09-17 Sun> |
-| simple lists                        |                  | <2013-02-26 Tue> |
-| lists with checkboxes               | <2020-05-03 Sun> |                  |
-| nested lists                        |                  | <2013-10-17 Thu> |
-| Headings with TODO items            | <2020-05-03 Sun> |                  |
-| hide Drawers                        |                  | <2013-10-17 Thu> |
-| Noexport tag of heading             | <2020-05-03 Sun> |                  |
-| simple blocks                       |                  | <2013-02-26 Tue> |
-| simple links                        |                  | <2013-02-26 Tue> |
-| footnotes                           | <2020-05-03 Sun> |                  |
-| custom links                        | <2020-05-03 Sun> |                  |
-| link to ID                          | <2020-05-03 Sun> |                  |
-| states                              | <2020-05-03 Sun> |                  |
-| chain siblings                      | <2020-05-03 Sun> |                  |
-| priorities                          |                  | <2013-02-26 Tue> |
-| subtask statistics                  |                  | <2013-02-26 Tue> |
-| tags                                | <2020-05-03 Sun> |                  |
-| simple tables                       |                  | <2013-02-26 Tue> |
-| tables formatting: bold             |                  | <2013-10-17 Thu> |
-| tables formatting: align numbers    | <2020-05-03 Sun> |                  |
-| hiding TBLFM                        |                  | <2013-02-26 Tue> |
-| column view                         | <2020-05-03 Sun> |                  |
-| showing timestamps                  |                  | <2013-02-26 Tue> |
-| showing clocking summaries          |                  | <2013-02-26 Tue> |
-| showing clocking drawers            | <2020-05-03 Sun> |                  |
-| simple SRC blocks                   |                  | <2013-02-26 Tue> |
-| SRC block formatting as verbatim    | <2020-05-03 Sun> |                  |
-| SRC blocks with syntax highlighting |                  | <2014-04-13 Sun> |
-| LaTeX \alpha \beta \phi             |                  | <2013-10-17 Thu> |
-| LaTeX simple formulas               | <2020-05-03 Sun> |                  |
-| LaTeX blocks                        | <2020-05-03 Sun> |                  |
+Last GitHub feature render check and last table update: <2020-10-15 Thu> 
 
+# Following line causes my Org to display column view mode instead of re-generating the table:
+# :exclude-tags "example" 
+
+#+BEGIN: columnview :id global :match "WORKS|FAILS|PARTLY" :format "%ITEM(What) %TAGS(Tags)"
+| What                                         | Tags             |
+|----------------------------------------------+------------------|
+| Text formatting                              | :WORKS:          |
+| Lists                                        | :PARTLY:         |
+| Headings with TODO items                     | :FAILS:          |
+| Drawers                                      | :FAILS:          |
+| blocks ([[http://orgmode.org/org.html#Blocks][docu]])                                | :PARTLY:         |
+| EXAMPLE block                                | :WORKS:          |
+| QUOTE block                                  | :WORKS:          |
+| VERSE block                                  | :FAILS:          |
+| SRC block                                    | :WORKS:          |
+| python                                       | :WORKS:          |
+| shell                                        | :WORKS:          |
+| ruby                                         | :WORKS:          |
+| ditaa                                        | :WORKS:          |
+| session with shell and R                     | :WORKS:          |
+| QUOTE block                                  | :WORKS:          |
+| HTML block                                   |                  |
+| LATEX block ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                           | :FAILS:          |
+| NOTES block                                  | :FAILS:          |
+| comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])                              | :WORKS:          |
+| Noexport tag of heading                      | :WORKS:noexport: |
+| links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                 | :PARTLY:         |
+| heading with PROPERTIES drawer containing ID |                  |
+| states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                    | :PARTLY:         |
+| making dependencies explicit                 |                  |
+| example with chain siblings                  |                  |
+| buy bike                                     |                  |
+| take tour                                    |                  |
+| goto hospital                                |                  |
+| priorities ([[http://orgmode.org/org.html#Priorities][docu]])                            |                  |
+| example                                      |                  |
+| example                                      |                  |
+| breaking down in subtasks ([[http://orgmode.org/org.html#Breaking-down-tasks][docu]])             |                  |
+| example                                      |                  |
+| subtask 1                                    |                  |
+| subtask 2                                    |                  |
+| subtask 3                                    |                  |
+| tags [[http://orgmode.org/org.html#Tags][(docu)]]                                  | :FAILS:          |
+| example                                      | :tag:            |
+| tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                         | :PARTLY:         |
+| tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])              | :PARTLY:         |
+| column view ([[http://orgmode.org/org.html#Column-view][docu]])                           | :FAILS:          |
+| example sub-item                             | :mytag1:         |
+| another example                              | :mytag2:         |
+| dates & time ([[http://orgmode.org/org.html#Dates-and-Times][docu]])                          | :WORKS:          |
+| clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])                         | :PARTLY:         |
+| example sub-hierarchy with report            |                  |
+| example item                                 |                  |
+| another item                                 |                  |
+#+END:
 
 * Featuretest
-** Text formatting                                                  :PARTLY:
+** Text formatting                                                                           :WORKS:
 
 - *bold*
 - /italic/
@@ -58,35 +79,30 @@ supported by github which is using an (old) version of [[https://github.com/wall
 
 : small example
 
-#+COMMENT: this will never be exported
-
-#+BEGIN_COMMENT
-multi
-line
-comment
-#+END_COMMENT
-
-
 ** Lists                                                            :PARTLY:
 
 simple list:
-- Emacs
-- Org-mode
+- Org mode
 - Lists
+- [ ] unchecked checkbox
+- [X] checked checkbox
+- [-] undecided checkbox (=C-u C-u C-c C-c=)
 
 enumerate:
 1. Emacs
 2. Org-mode
 3. Lists
 
+mixed with checkboxes:
+
 - Clean out garage
   1. [ ] get stuff out
      - [ ] be careful with that axe, Eugene
-  2. [ ] get rid of old stuff
+  2. [X] get rid of old stuff
      - using eBay?
      - try to use rubbish as birthday presents for family
   3. [ ] repaint garage
-  4. [ ] put stuff back in
+  4. [X] put stuff back in
 
 ** Headings with TODO items                                          :FAILS:
 
@@ -117,30 +133,46 @@ enumerate:
 :CREATED:  [2020-10-15 Thu 11:18]
 :END:
 
-- more of it in the Babel section later on
+- including babel ([[http://orgmode.org/org.html#Library-of-Babel][docu]])
 
-*** EXAMPLE block
+*** EXAMPLE block                                                                           :WORKS:
 
 #+BEGIN_EXAMPLE
 An example in an EXAMPLE block.
 Second line within this block.
 #+END_EXAMPLE
 
-*** QUOTE block
+*** QUOTE block                                                                             :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:51]
+:END:
+
+Will be wrapped:
 
 #+BEGIN_QUOTE
 An example in an QUOTE block.
 Second line within this block.
 #+END_QUOTE
 
-*** VERSE block
+*** VERSE block                                                                             :FAILS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:52]
+:END:
 
 #+BEGIN_VERSE
 An example in an VERSE block.
 Second line within this block.
 #+END_VERSE
 
-*** SRC block
+*** SRC block                                                                               :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:52]
+:END:
+
+**** python                                                                                :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 12:02]
+:END:
 
 #+BEGIN_SRC python
   def my_test(myvar: str = 'foo bar'):
@@ -161,7 +193,69 @@ Second line within this block.
 (message (concat "Hello" "Europe!")) ;; inline comment
 #+END_SRC
 
-*** QUOTE block
+
+- some examples are taken from [[http://orgmode.org/worg/org-contrib/babel/intro.html][Worg: Introduction to Babel]]
+
+**** shell                                                                                 :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:59]
+:END:
+
+#+BEGIN_SRC sh
+echo "Hello Europe!"
+FOO="foo bar"
+echo "A test with ${FOO}"
+pwd
+#+END_SRC
+
+**** ruby                                                                                  :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:59]
+:END:
+
+#+begin_src ruby
+require 'date'
+"This file was last evaluated on #{Date.today}"
+#+end_src
+
+**** ditaa                                                                                 :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:59]
+:END:
+
+#+begin_src ditaa :file blue.png :cmdline -r
+  +---------+
+  | cBLU    |
+  |         |
+  |    +----+
+  |    |cPNK|
+  |    |    |
+  +----+----+
+#+end_src
+
+**** session with shell and R                                                              :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:59]
+:END:
+
+#+name: directories
+#+begin_src sh :results replace
+  cd ~/archive/events_memories && du -sc * |grep -v total
+#+end_src
+
+Using result set "directories" from above as "dirs" in R below:
+
+#+name: directory-pie-chart(dirs = directories)
+#+begin_src R :session R-pie-example :file ./dirs.png
+  pie(dirs[,1], labels = dirs[,2])
+#+end_src
+
+*** QUOTE block                                                                             :WORKS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:52]
+:END:
+
+Will be wrapped:
 
 #+BEGIN_QUOTE
 An example in an QUOTE block.
@@ -169,25 +263,44 @@ Second line within this block.
 #+END_QUOTE
 
 *** HTML block
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:52]
+:END:
 
-#+BEGIN_EXAMPLE
-An example in an EXAMPLE block.
-Second line within this block.
-#+END_EXAMPLE
+#+BEGIN_HTML
+<p>
+This is a paragraph with
+<a href="https://Karl-Voit.at">a link</a>
+within.
+</p>
+#+END_HTML
 
+*** LATEX block ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                                                                      :FAILS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:53]
+:END:
 
-
-*** LATEX block
+Greek characters \alpha \beta \phi \LaTeX{}  $\varphi$
 
 #+BEGIN_LATEX
+\section{Section Title}
+
+This is \emph{emphasized} and $y=x^2$ is an equation.
+
 An example in an LATEX block.
-Second line within this block.
+Another line within this block.
+
 \alpha $x=42y$
+
+Greek characters \alpha \beta \phi \LaTeX{}  $\varphi$
 #+END_LATEX
 
-*** NOTES block
+*** NOTES block                                                                             :FAILS:
+:PROPERTIES:
+:CREATED:  [2020-10-15 Thu 11:53]
+:END:
 
-Notes blocks are not standard Org mode. However, =org-reveal= is using
+Notes blocks are *not standard Org mode*. However, =org-reveal= is using
 it for handout notes so I would like to include it here.
 
 #+BEGIN_NOTES
@@ -225,6 +338,8 @@ the top of this document (it's set to ~noexport~).
 
 Tagging a heading with the tag hides the section when opening the on the site.
 
+This whole heading is omitted from being rendered on GitHub.
+
 ** links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                      :PARTLY:
 
 todo: target
@@ -244,6 +359,8 @@ todo: target
 
 [fn:myotherlabel] This is a footnote from reference above.
 [fn:2] This is a footnote with a simple number as label.
+
+Footnotes aren't working
 
 *** heading with PROPERTIES drawer containing ID
 :PROPERTIES:
@@ -284,6 +401,8 @@ foo bar
 
 ** tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                                             :PARTLY:
 
+Works but missing number alignment:
+
 | *Heading1* | *head2* |
 |------------+---------|
 | entry      |      42 |
@@ -292,6 +411,8 @@ foo bar
 | end        |   99.99 |
 
 ** tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                  :PARTLY:
+
+Tables are concatenated unfortunately and alignment fails.
 
 #+TBLNAME: mydemo-USD-EUR-rate
 | *US-Dollar* |      *EUR* |
@@ -355,80 +476,8 @@ CLOCK: [2012-11-18 Sun 19:26]--[2012-11-18 Sun 19:33] =>  0:07
 CLOCK: [2012-11-17 Sat 16:25]--[2012-11-18 Sun 19:25] => 27:00
 :END:
 
-** source code ([[http://orgmode.org/org.html#Working-With-Source-Code][docu]])                                               :PARTLY:
 
-#+BEGIN_SRC python
-  def foo(argument):
-       print "Hello World"
- #+END_SRC
-
-** babel ([[http://orgmode.org/org.html#Library-of-Babel][docu]])                                                      :FAILS:
-
-*** babel simple ([[http://orgmode.org/org.html#Working-With-Source-Code][doc]])
-
-- some examples are taken from [[http://orgmode.org/worg/org-contrib/babel/intro.html][Worg: Introduction to Babel]]
-
-**** shell
-
-#+BEGIN_SRC sh
-pwd
-#+END_SRC
-
-**** ruby
-
-#+begin_src ruby
-require 'date'
-"This file was last evaluated on #{Date.today}"
-#+end_src
-
-**** python
-
-#+BEGIN_SRC python
-return 42 + 7
-#+END_SRC
-
-**** ditaa
-
-#+begin_src ditaa :file blue.png :cmdline -r
-  +---------+
-  | cBLU    |
-  |         |
-  |    +----+
-  |    |cPNK|
-  |    |    |
-  +----+----+
-#+end_src
-
-*** babel advanced
-
-**** session with shell and R
-
-#+name: directories
-#+begin_src sh :results replace
-  cd ~/archive/events_memories && du -sc * |grep -v total
-#+end_src
-
-Using result set "directories" from above as "dirs" in R below:
-
-#+name: directory-pie-chart(dirs = directories)
-#+begin_src R :session R-pie-example :file ./dirs.png
-  pie(dirs[,1], labels = dirs[,2])
-#+end_src
-
-** LaTeX ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                                                      :FAILS:
-
-Greek characters \alpha \beta \phi \LaTeX{}  $\varphi$
-
-#+BEGIN_LaTeX
-
-  \section{Section Title}
-
-  This is \emph{emphasized} and $y=x^2$ is an equation.
-
-#+END_LaTeX
-
-
-* Testing
+* MISC Ad-Hoc Testing
 ** Headings
 
 ** heading with properties
