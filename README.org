@@ -537,6 +537,9 @@ This sub-hierarchy is here to test specific stuff.
 [[http://tagstore.org][- indirect URL]]
 - direct email: me@example.com
 - [[me@server.com][indirect email]]
+- [[file:README.org][file link]]
+- [[file:README.org::#links][file + heading link]]
+# this ^^ used to work but was broken sometime after 2020-11-01
 
 ** examples
 
