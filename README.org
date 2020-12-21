@@ -72,6 +72,8 @@ Within links:
 
 [[http://orgmode.org][This *is* an /example/ of _some_ syntax +highlighting+ within =links= and ~such~.]]
 
+[[https://gnu.org][~gnu~]]
+
 Table:
 
 | Example                                                                           |
