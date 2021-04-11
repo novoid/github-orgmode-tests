@@ -423,8 +423,13 @@ Footnotes aren't working
 :PROPERTIES:
 :ID: myexampleid
 :END:
+    Should have =#myexampleid= anchor, doesn't work as of =2021-04-11=
 
-foo bar
+*** eading with PROPERTIES drawer containing CUSTOM_ID
+:PROPERTIES:
+:CUSTOM_ID: myexamplecustomid
+:END:
+    Should have =#myexamplecustomid= anchor, doesn't work as of =2021-04-11=
 
 ** states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                                        :PARTLY:
 
@@ -575,12 +580,13 @@ This sub-hierarchy is here to test specific stuff.
 ** links
 
 - direct URL: http://tagstore.org
-[[http://tagstore.org][- indirect URL]]
+- [[http://tagstore.org][indirect URL]]
 - direct email: me@example.com
 - [[me@server.com][indirect email]]
 - [[file:README.org][file link]]
+    should link to README.org
 - [[file:README.org::#links][file + heading link]]
-# this ^^ used to work but was broken sometime after 2020-11-01
+    should link to README.org#links -- used to work but was broken sometime after =2020-11-01=
 
 ** examples
 
