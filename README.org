@@ -585,8 +585,8 @@ This sub-hierarchy is here to test specific stuff.
 - [[me@server.com][indirect email]]
 - [[file:README.org][file link]]
     should link to README.org
-- [[file:README.org::#links][file + heading link]]
-    should link to README.org#links -- used to work but was broken sometime after =2020-11-01=
+- [[#links][file + heading link]]
+    should link to #links in the same file (but the link is recognized in Emacs). If the heading is multiple words, attach them with '-'.
 
 ** examples
 
