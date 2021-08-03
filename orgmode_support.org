@@ -184,26 +184,26 @@ Formatting:
 Here is a brief overview of some tools and their support level for Org mode.
 
 Legend:
-- ✓ → as text, no syntax highlighting
-- ✓✓ → outline support and/or syntax highlighting (not including block content highlighting)
+- *✓* → as text, no syntax highlighting
+- *✓✓* → outline support and/or syntax highlighting (not including block content highlighting)
 
 
-| *Tool*          | *Platform*      | *Text formatting* | *Lists* | *Blocks* | *Comments* | *Links* | *Tables* | *Note*                         |
-|-----------------+-----------------+-------------------+---------+----------+------------+---------+----------+--------------------------------|
-| GitHub          | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | [[https://github.com/novoid/github-orgmode-tests/blob/master/orgmode_support.org][Example]]                        |
-| GitLab          | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | FIXXME: URL to example file    |
-| [[https://orgmodeweb.org/][OrgModeWeb]]      | Web             | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | [[https://github.com/borablanca/orgmodeweb][Source]]                         |
-| [[https://www.filestash.app/][filestash]]       | Web             | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ?        | [[https://github.com/mickael-kerjean/filestash][Source]]; [[https://www.filestash.app/2018/05/31/release-note-v0.1/][Example]]                |
-| [[http://www.orgzly.com/][Orgzly]]          | Android         | ✓✓                | ✓       | ✓✓       | ✓✓         | ✓✓      | ✓        | [[https://github.com/orgzly/orgzly-android][Source]]                         |
-| [[https://orgro.org/][Orgro]]           | Android/iOS     | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | mobile viewer; [[https://github.com/amake/orgro][Source]]; [[https://orgro.org/][Example]] |
-| Emacs           | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | FIXXME: URL to example file    |
-| [[https://github.com/jceb/vim-orgmode][vim-orgmode]]     | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | [[https://github.com/jceb/vim-orgmode/blob/master/examples/mylife.png][Example]]                        |
-| Email           | any             | ✓                 | ✓       | ✓        | ✓          | ✓ [2]   | ✓        |                                |
-| Most editors[9] | any             | ✓                 | ✓       | ✓        | ✓          | ✓ [2]   | ✓        |                                |
-|                 |                 |                   |         |          |            |         |          |                                |
-|                 |                 |                   |         |          |            |         |          |                                |
-|                 |                 |                   |         |          |            |         |          |                                |
-|                 |                 |                   |         |          |            |         |          |                                |
+| *Tool*                | *Platform*      | *Text formatting* | *Lists* | *Blocks* | *Comments* | *Links* | *Tables* | *Note*                                     |
+|-----------------------+-----------------+-------------------+---------+----------+------------+---------+----------+--------------------------------------------|
+| GitHub                | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | [[https://github.com/novoid/github-orgmode-tests/blob/master/orgmode_support.org][Example]]                                    |
+| GitLab                | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | FIXXME: URL to example file                |
+| [[https://orgmodeweb.org/][OrgModeWeb]]            | Web             | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | [[https://github.com/borablanca/orgmodeweb][Source]]                                     |
+| [[https://www.filestash.app/][filestash]]             | Web             | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ?        | [[https://github.com/mickael-kerjean/filestash][Source]]; [[https://www.filestash.app/2018/05/31/release-note-v0.1/][Example]]                            |
+| [[http://www.orgzly.com/][Orgzly]]                | Android         | ✓✓                | ✓       | ✓✓       | ✓✓         | ✓✓      | ✓        | [[https://github.com/orgzly/orgzly-android][Source]]                                     |
+| [[https://orgro.org/][Orgro]]                 | Android/iOS     | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | mobile viewer; [[https://github.com/amake/orgro][Source]]; [[https://orgro.org/][Example]]             |
+| Emacs                 | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | [[https://code.orgmode.org/bzg/org-mode][Org source]]; FIXXME: URL to example file    |
+| [[https://github.com/jceb/vim-orgmode][vim-orgmode]]           | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | [[https://github.com/jceb/vim-orgmode/blob/master/examples/mylife.png][Example]]                                    |
+| Email                 | any             | ✓                 | ✓       | ✓        | ✓          | ✓ [2]   | ✓        |                                            |
+| Most editors          | any             | ✓                 | ✓       | ✓        | ✓          | ✓ [2]   | ✓        | Like notepad.exe, Notepad++, UltraEdit, …  |
+| [[https://pandoc.org/][Pandoc]] file converter | any             | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | Using Org mode format for source or target |
+|                       |                 |                   |         |          |            |         |          |                                            |
+|                       |                 |                   |         |          |            |         |          |                                            |
+|                       |                 |                   |         |          |            |         |          |                                            |
 
 Please note that there are [[https://orgmode.org/worg/org-blog-wiki.html][many different blog and wiki generators]] that are able to process Org mode syntax to generate web pages.
 
@@ -220,5 +220,3 @@ Please note that there are [[https://orgmode.org/worg/org-blog-wiki.html][many d
 [1] Comments are not rendered in web interface and are visible in edit mode only.
 
 [2] Plain URLs without brackets are not parsed as links but as text.
-
-[9] Like notepad.exe, Notepad++, UltraEdit, ...
