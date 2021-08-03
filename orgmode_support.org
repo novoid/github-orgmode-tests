@@ -148,6 +148,15 @@ of vertical bars per line is met. Text formatting is applied.
 |------------+---------|
 | end        |   99.99 |
 
+Don't worry about alignment if you don't have proper tool support. This is a perfectly valid table:
+
+|*Heading1*|*head2*|
+|-+--|
+|entry|42|
+|foo|21.7|
+|-+- |
+|end|99.99|
+
 More colums:
 
 |     *When* | *What*                 | *USD* | *EUR* |
