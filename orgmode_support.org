@@ -189,6 +189,7 @@ Legend:
 | Emacs       | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | FIXXME: URL to example file    |
 | [[https://github.com/jceb/vim-orgmode][vim-orgmode]] | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | [[https://github.com/jceb/vim-orgmode/blob/master/examples/mylife.png][Example]]                        |
 | notepad.exe | Win             | ✓                 | ✓       | ✓        | ✓          | ✓ [2]   | ✓        |                                |
+| Email       | any             | ✓                 | ✓       | ✓        | ✓          | ✓ [2]   | ✓        |                                |
 |             |                 |                   |         |          |            |         |          |                                |
 |             |                 |                   |         |          |            |         |          |                                |
 |             |                 |                   |         |          |            |         |          |                                |
