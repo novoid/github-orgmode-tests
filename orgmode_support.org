@@ -184,7 +184,7 @@ Legend:
 | GitHub          | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | [[https://github.com/novoid/github-orgmode-tests/blob/master/orgmode_support.org][Example]]                        |
 | GitLab          | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | FIXXME: URL to example file    |
 | [[https://orgmodeweb.org/][OrgModeWeb]]      | Web             | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | [[https://github.com/borablanca/orgmodeweb][Source]]                         |
-| [[https://github.com/mickael-kerjean/filestash][filestash]]       | Web             | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ?        | [[https://www.filestash.app/2018/05/31/release-note-v0.1/][Example]]                        |
+| [[https://www.filestash.app/][filestash]]       | Web             | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ?        | [[https://github.com/mickael-kerjean/filestash][Source]]; [[https://www.filestash.app/2018/05/31/release-note-v0.1/][Example]]                |
 | [[http://www.orgzly.com/][Orgzly]]          | Android         | ✓✓                | ✓       | ✓✓       | ✓✓         | ✓✓      | ✓        | [[https://github.com/orgzly/orgzly-android][Source]]                         |
 | [[https://orgro.org/][Orgro]]           | Android/iOS     | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | mobile viewer; [[https://github.com/amake/orgro][Source]]; [[https://orgro.org/][Example]] |
 | Emacs           | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | FIXXME: URL to example file    |
