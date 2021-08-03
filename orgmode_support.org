@@ -1,0 +1,208 @@
+
+* Syntax Examples
+
+** *Simple* /text/ _formatting_
+
+- *bold*
+- /italic/
+- _underline_
+- +strike through+
+- =code=
+- ~commands~
+
+: small example
+
+Within links:
+
+[[http://orgmode.org][This *is* an /example/ of _some_ syntax +highlighting+ within =links= and ~such~.]]
+
+[[https://gnu.org][~gnu~]]
+
+-----
+
+Five or more dashes produce a horizontal line.
+
+** Lists and Checkboxes
+
+simple list:
+- Org mode
+- Lists
+- [ ] unchecked checkbox
+- [X] checked checkbox
+- [-] undecided checkbox (=C-u C-u C-c C-c=)
+
+enumerate:
+1. Emacs
+2. Org-mode
+3. Lists
+
+mixed with checkboxes:
+
+- Clean out garage
+  1. [ ] get stuff out
+     - [X] be careful with that axe, Eugene
+  2. [X] get rid of old stuff
+     - sell on the Internet?
+     - try to use rubbish as birthday presents for family
+  3. [ ] repaint garage
+  4. [ ] put stuff back in
+
+** Blocks
+
+An EXAMPLE block is rendered "as is", keeping line breaks and not
+interpreting content:
+
+#+BEGIN_EXAMPLE
+An example in an EXAMPLE block.
+Second line within this block.
+
+This *is* an /example/ of _some_ syntax +highlighting+ within =links= and ~such~.
+#+END_EXAMPLE
+
+Content within a QUOTE block may get different line breaks when
+exported/renderd and interprets text formatting:
+
+#+BEGIN_QUOTE
+An example in an QUOTE block.
+Second line within this block.
+
+This *is* an /example/ of _some_ syntax +highlighting+ within =links= and ~such~.
+#+END_QUOTE
+
+SRC blocks contain source code snippets. Text formatting is ignored,
+line breaks preserved.
+
+A Python source code example:
+
+#+BEGIN_SRC
+  def my_test(myvar: str = 'foo bar'):
+      """
+      This is an example function.
+
+      @type  myvar: str = 'foo bar': number
+      @param myvar: str = 'foo bar': FIXXME
+      """
+
+      mynewvar: str = myvar + ' additional content'
+      return mynewvar
+
+  print("Hello " + my_text('Europe!'))
+#+END_SRC
+
+A shell script example:
+
+#+BEGIN_SRC
+echo "Hello Europe!"
+FOO="foo bar"
+echo "A test with ${FOO}"
+pwd
+#+END_SRC
+
+** Comments
+
+Comment  lines contain  content which  is not  visible in  any derived
+document such as a PDF document or a web view.
+
+hash space:
+
+# This is a comment
+
+space hash space:
+
+ # This is a comment
+
+space space hash space:
+
+  # This is a comment
+
+-----------
+
+Comment block:
+
+#+BEGIN_COMMENT
+This is a multi line comment block.
+This is the second line.
+
+This is the second paragraph.
+
+This *is* an /example/ of _some_ syntax +highlighting+ within =links= and ~such~.
+#+END_COMMENT
+
+** Links
+
+- file:test.org without brackets
+- [[file:test.org]] with double brackets
+- http://orgmode.org → plain URL without brackets
+- [[http://orgmode.org]] → URL with brackets without description
+- [[http://orgmode.org][Org mode homepage]] → URL with brackets with description
+
+** Tables
+
+Tables do not have to be proper aligned as long as the correct number
+of vertical bars per line is met. Text formatting is applied.
+
+| *Heading1* | *head2* |
+|------------+---------|
+| entry      |      42 |
+| foo        |    21.7 |
+|------------+---------|
+| end        |   99.99 |
+
+More colums:
+
+|     *When* | *What*                 | *USD* | *EUR* |
+|------------+------------------------+-------+-------|
+| 2012-02-03 | Taxi Graz-Airport      |       | 18.00 |
+| 2012-02-03 | Taxi Seattle Airport   | 25.00 | 19.12 |
+| 2012-02-13 | Taxi                   |  7.00 |  5.35 |
+| 2012-02-14 | Taxi                   |  8.00 |  6.12 |
+| 2012-02-17 | Taxi to Airport SeaTac | 35.00 | 26.77 |
+| 2012-02-22 | Taxi Airport-Graz      |       | 16.00 |
+|------------+------------------------+-------+-------|
+|            |                        |       | 91.36 |
+
+Formatting:
+
+| Example                                                                           |
+|-----------------------------------------------------------------------------------|
+| [[http://orgmode.org][Org mode]]                                                                          |
+| This *is* an /example/ of _some_ syntax +highlighting+ within =links= and ~such~. |
+
+
+
+* Compatibility
+
+Here is a brief overview of some tools and their support level for Org mode.
+
+Legend:
+- ✓ → as text, no syntax highlighting
+- ✓✓ → outline support and/or syntax highlighting (not including block content highlighting)
+
+
+| *Tool*      | *Platform*      | *Text formatting* | *Lists* | *Blocks* | *Comments* | *Links* | *Tables* | *Note*                         |
+|-------------+-----------------+-------------------+---------+----------+------------+---------+----------+--------------------------------|
+| GitHub      | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | FIXXME: URL to example file    |
+| GitLab      | Web             | ✓✓                | ✓       | ✓        | ✓ [1]      | ✓✓ [2]  | ✓        | FIXXME: URL to example file    |
+| [[https://orgmodeweb.org/][OrgModeWeb]]  | Web             | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | [[https://github.com/borablanca/orgmodeweb][Source]]                         |
+| [[http://www.orgzly.com/][Orgzly]]      | Android         | ✓✓                | ✓       | ✓✓       | ✓✓         | ✓✓      | ✓        | [[https://github.com/orgzly/orgzly-android][Source]]                         |
+| [[https://orgro.org/][Orgro]]       | Android/iOS     | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | mobile viewer; [[https://github.com/amake/orgro][Source]]; [[https://orgro.org/][Example]] |
+| Emacs       | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | FIXXME: URL to example file    |
+| [[https://github.com/jceb/vim-orgmode][vim-orgmode]] | Win/macOS/Linux | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | [[https://github.com/jceb/vim-orgmode/blob/master/examples/mylife.png][Example]]                        |
+|             |                 |                   |         |          |            |         |          |                                |
+|             |                 |                   |         |          |            |         |          |                                |
+|             |                 |                   |         |          |            |         |          |                                |
+|             |                 |                   |         |          |            |         |          |                                |
+
+# https://orgmodeweb.org/#notes#_q4x88hayw in Chrome
+
+- [ ] Sublime Text: https://github.com/danielmagnussons/orgmode
+- [ ] VS Code: https://github.com/ajtoo/vscode-org-mode
+- [ ] Atom: https://atom.io/packages/org-mode
+- [ ] more for iOS?
+
+- [ ] 2018-09-14: beorg on iOS http://irreal.org/blog/?p=7475
+  - https://beorgapp.com/
+
+[1] Comments are not rendered in web interface and are visible in edit mode only.
+
+[2] Plain URLs without brackets are not parsed as links but as text.
