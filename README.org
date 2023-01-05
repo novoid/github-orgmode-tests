@@ -35,14 +35,14 @@ Last GitHub feature render check and last table update: <2020-10-15 Thu>
 | HTML block                                                                        | :FAILS:          |
 | LATEX block ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                                                                | :FAILS:          |
 | NOTES block                                                                       | :FAILS:          |
-| comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])                                                                   | :WORKS:          |
+| comments ([[http://orgmode.org/manual/Comment-lines.html][docu]])                                                                   | :WORKS:          |
 | Noexport tag of heading                                                           | :WORKS:noexport: |
 | links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                                      | :PARTLY:         |
 | states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                                                         | :PARTLY:         |
 | tags [[http://orgmode.org/org.html#Tags][(docu)]]                                                                       | :FAILS:          |
 | tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                                                              | :PARTLY:         |
-| tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                                   | :PARTLY:         |
-| column view ([[http://orgmode.org/org.html#Column-view][docu]])                                                                | :FAILS:          |
+| tables complex ([[http://orgmode.org/org.html#The-Spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                                   | :PARTLY:         |
+| column view ([[http://orgmode.org/org.html#Column-View][docu]])                                                                | :FAILS:          |
 | dates & time ([[http://orgmode.org/org.html#Dates-and-Times][docu]])                                                               | :WORKS:          |
 | clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])                                                              | :PARTLY:         |
 #+END:
@@ -355,7 +355,7 @@ Second line within this block.
 This *is* an /example/ of _some_ syntax +highlighting+ within =links= and ~such~.
 #+END_NOTES
 
-** comments ([[http://orgmode.org/manual/Comment-lines.html#Comment-lines][docu]])                                                                           :WORKS:
+** comments ([[http://orgmode.org/manual/Comment-Lines.html][docu]]) :WORKS:
 
 Comment lines:
 
@@ -405,11 +405,11 @@ todo: target
 - id:myexampleid
 - [[file:~/.zshrc.local]]
 - http://orgmode.org
-  - [[http://orgmode.org/org.html#External-links][docu: list of external links]]
+  - [[http://orgmode.org/org.html#External-Links][docu: list of external links]]
 - custom links: [[contact:John%20Smith][contact:John Smith]]
-  - [[http://orgmode.org/org.html#Link-abbreviations][docu: link abbrevations]]
+  - [[http://orgmode.org/org.html#Link-Abbreviations][docu: link abbrevations]]
 
-- footnotes ([[http://orgmode.org/org.html#Footnotes][docu]])
+- footnotes ([[http://orgmode.org/org.html#Creating-Footnotes][docu]])
   - plain          [fn::great content here]
   - with own label [fn:mylabel:great content here]
   - reference      [fn:myotherlabel] [fn:2]
@@ -455,7 +455,7 @@ Footnotes aren't working
 **** TODO [#A] example
 **** NEXT [#B] example
 
-*** breaking down in subtasks ([[http://orgmode.org/org.html#Breaking-down-tasks][docu]])
+*** breaking down in subtasks ([[http://orgmode.org/org.html#Breaking-Down-Tasks][docu]])
 
 **** TODO example [1/3] [33%]
 ***** DONE subtask 1
@@ -480,7 +480,7 @@ Footnotes aren't working
 |------------+---------|
 | end        |   99.99 |
 
-** tables complex ([[http://orgmode.org/org.html#The-spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                  :PARTLY:
+** tables complex ([[http://orgmode.org/org.html#The-Spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                  :PARTLY:
 
 - MISSING:
   - Tables are concatenated unfortunately and alignment fails.
@@ -501,7 +501,7 @@ Footnotes aren't working
 |            |                        |       | 91.36 |
 #+TBLFM: @>$4=vsum(@I$4..@II$4);%.2f::@3$4=@3$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f::@4$4=@4$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f::@5$4=@5$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f::@6$4=@6$3*remote(mydemo-USD-EUR-rate,@2$2);%.2f
 
-** column view ([[http://orgmode.org/org.html#Column-view][docu]])                                                :FAILS:
+** column view ([[http://orgmode.org/org.html#Column-View][docu]])                                                :FAILS:
 :PROPERTIES:
 :COLUMNS:  %25ITEM %TAGS %PRIORITY %TODO %10MyProperties
 :MyProperties_ALL: "Thomas" "Maria" "Susan" "Joe"
@@ -525,7 +525,7 @@ Footnotes aren't working
 - ~C-c .~    *insert active* <2012-04-23 Mon>  (with ~C-u~: <2012-04-23 Mon 19:14>)
 - ~C-c !~    insert inactive [2012-04-23 Mon]  (with ~C-u~: [2012-04-23 Mon 19:14])
 
-** clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])                                             :PARTLY:
+** clocking time ([[http://orgmode.org/org.html#Clocking-Work-Time][docu]])                                             :PARTLY:
 
 - MISSING:
   - drawer information
