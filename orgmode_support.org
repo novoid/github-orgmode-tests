@@ -98,6 +98,15 @@ echo "A test with ${FOO}"
 pwd
 #+END_SRC
 
+HTML Blocks
+
+#+BEGIN_HTML
+<strong>This is strong</strong>.
+<em>This</em> is emphasized.
+Heres is a web reference: <a href="https://Karl-Voit.at">link</a>
+<!-- this is a comment -->
+#+END_HTML
+
 ** Comments
 
 Comment  lines contain  content which  is not  visible in  any derived
@@ -200,7 +209,7 @@ Legend:
 | [[http://www.orgzly.com/][Orgzly]]                | Android          | ✓✓                | ✓       | ✓✓       | ✓✓         | ✓✓      | ✓        | [[https://github.com/orgzly/orgzly-android][Source]]                                                |
 | [[https://orgro.org/][Orgro]]                 | Android/iOS      | ✓✓                | ✓       | ✓        | ✓          | ✓       | ✓        | mobile viewer; [[https://github.com/amake/orgro][Source]]; [[https://orgro.org/][Example]]                        |
 | [[https://beorgapp.com/][beorg]]                 | iOS              | ?                 | ?       | ?        | ?          | ?       | ?        |                                                       |
-| [[https://www.reddit.com/r/plainorg][Plain Org]]             | iOS             | ✓✓                | ✓       | ✓✓       | ✓          | ✓✓      | ✓        | Available to TestFlight testers ([[https://xenodium.com/plain-org-for-ios-a-month-later/][details]])             |
+| [[https://www.reddit.com/r/plainorg][Plain Org]]             | iOS              | ✓✓                | ✓       | ✓✓       | ✓          | ✓✓      | ✓        | Available to TestFlight testers ([[https://xenodium.com/plain-org-for-ios-a-month-later/][details]])             |
 |-----------------------+------------------+-------------------+---------+----------+------------+---------+----------+-------------------------------------------------------|
 | Emacs                 | Win/macOS/Linux  | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | [[https://code.orgmode.org/bzg/org-mode][Org source]]; FIXXME: URL to example file               |
 | [[https://github.com/jceb/vim-orgmode][vim-orgmode]]           | Win/macOS/Linux  | ✓✓                | ✓✓      | ✓✓       | ✓✓         | ✓✓      | ✓✓       | for the vim editor; [[https://github.com/jceb/vim-orgmode/blob/master/examples/mylife.png][Example]]                           |
