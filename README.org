@@ -47,6 +47,9 @@ Last GitHub feature render check and last table update: <2020-10-15 Thu>
 | clocking time ([[http://orgmode.org/org.html#Clocking-work-time][docu]])                         | :PARTLY:         |
 #+END:
 
+Please note that there is a *much* better syntax overview and compatibility list on [[https://gitlab.com/publicvoit/orgdown/-/blob/master/doc/Tool-Support.org][the Orgdown project page]].
+
+
 * Featuretest
 :PROPERTIES:
 :ID:       Featuretest
@@ -398,10 +401,13 @@ This whole heading is omitted from being rendered on GitHub.
 todo: target
 : # <<link>>
 
-- id:myexampleid
-- [[file:~/.zshrc.local]]
-- http://orgmode.org
-  - [[http://orgmode.org/org.html#External-Links][docu: list of external links]]
+- file:test.org without brackets
+- [[file:test.org]] with double brackets
+- http://orgmode.org → plain URL without brackets
+- [[http://orgmode.org]] → URL with brackets without description
+- [[http://orgmode.org][Org mode homepage]] → URL with brackets with description
+
+- id:myexampleid → an id-link
 - custom links: [[contact:John%20Smith][contact:John Smith]]
   - [[http://orgmode.org/org.html#Link-Abbreviations][docu: link abbrevations]]
 
@@ -550,6 +556,26 @@ CLOCK: [2012-11-17 Sat 16:25]--[2012-11-18 Sun 19:25] => 27:00
 :END:
 
 
+** images                                                                                   :PARTLY:
+:PROPERTIES:
+:CREATED:  [2023-12-16 Sat 23:31]
+:END:
+
+Embedding image using HTML block:
+
+#+BEGIN_HTML
+<a href="https://gitlab.com/publicvoit/orgdown">
+<img src="Orgdown logo - 64x64 white background.png" />
+</a>
+#+END_HTML
+
+Embedding image using =file= link:
+
+[[file:Orgdown logo - 64x64 white background.png]]
+
+* Parsers
+
+Parsers for Org mode can be found on https://orgmode.org/worg/org-tools/index.html
 * MISC Ad-Hoc Testing
 
 This sub-hierarchy is here to test specific stuff.
