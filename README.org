@@ -14,38 +14,39 @@ Last GitHub feature render check and last table update: <2020-10-15 Thu>
 # :exclude-tags "example" 
 
 #+BEGIN: columnview :id "Featuretest" :match "WORKS|FAILS|PARTLY" :format "%ITEM(Feature) %TAGS(status)"
-| Feature                                                                           | status           |
-|-----------------------------------------------------------------------------------+------------------|
-| Text formatting                                                                   | :WORKS:          |
-| Text formatting within other syntax elements                                      | :WORKS:          |
-| Lists                                                                             | :PARTLY:         |
-| Headings with TODO items                                                          | :FAILS:          |
-| Drawers                                                                           | :FAILS:          |
-| blocks ([[http://orgmode.org/org.html#Blocks][docu]])                                                                     | :PARTLY:         |
-| EXAMPLE block                                                                     | :WORKS:          |
-| QUOTE block                                                                       | :WORKS:          |
-| VERSE block                                                                       | :FAILS:          |
-| SRC block                                                                         | :WORKS:          |
-| python                                                                            | :WORKS:          |
-| shell                                                                             | :WORKS:          |
-| ruby                                                                              | :WORKS:          |
-| ditaa                                                                             | :WORKS:          |
-| session with shell and R                                                          | :WORKS:          |
-| QUOTE block                                                                       | :WORKS:          |
-| HTML block                                                                        | :FAILS:          |
-| LATEX block ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                                                                | :FAILS:          |
-| NOTES block                                                                       | :FAILS:          |
-| comments ([[http://orgmode.org/manual/Comment-Lines.html][docu]])                                                                   | :WORKS:          |
-| Noexport tag of heading                                                           | :WORKS:noexport: |
-| links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                                                      | :PARTLY:         |
-| states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                                                         | :PARTLY:         |
-| tags [[http://orgmode.org/org.html#Tags][(docu)]]                                                                       | :FAILS:          |
-| tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                                                              | :PARTLY:         |
-| tables complex ([[http://orgmode.org/org.html#The-Spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])                                                   | :PARTLY:         |
-| column view ([[http://orgmode.org/org.html#Column-View][docu]])                                                                | :FAILS:          |
-| dates & time ([[http://orgmode.org/org.html#Dates-and-Times][docu]])                                                               | :WORKS:          |
-| clocking time ([[http://orgmode.org/org.html#Clocking-Work-Time][docu]])                                                              | :PARTLY:         |
-| images                                                                            | :PARTLY:         |
+| Feature                                      | status           |
+|----------------------------------------------+------------------|
+| Text formatting                              | :WORKS:          |
+| Text formatting within other syntax elements | :WORKS:          |
+| Lists                                        | :PARTLY:         |
+| Headings with TODO items                     | :FAILS:          |
+| Drawers                                      | :FAILS:          |
+| blocks ([[http://orgmode.org/org.html#Blocks][docu]])                                | :PARTLY:         |
+| EXAMPLE block                                | :WORKS:          |
+| QUOTE block                                  | :WORKS:          |
+| VERSE block                                  | :FAILS:          |
+| SRC block                                    | :WORKS:          |
+| python                                       | :WORKS:          |
+| shell                                        | :WORKS:          |
+| ruby                                         | :WORKS:          |
+| ditaa                                        | :WORKS:          |
+| session with shell and R                     | :WORKS:          |
+| QUOTE block                                  | :WORKS:          |
+| HTML block                                   | :FAILS:          |
+| LATEX block ([[http://orgmode.org/org.html#Embedded-LaTeX][docu]])                           | :FAILS:          |
+| NOTES block                                  | :FAILS:          |
+| comments ([[http://orgmode.org/manual/Comment-Lines.html][docu]])                              | :WORKS:          |
+| Noexport tag of heading                      | :WORKS:noexport: |
+| links [[http://orgmode.org/org.html#Hyperlinks][(docu)]]                                 | :PARTLY:         |
+| states; TODO items ([[http://orgmode.org/org.html#TODO-Items][docu]])                    | :PARTLY:         |
+| tags [[http://orgmode.org/org.html#Tags][(docu)]]                                  | :FAILS:          |
+| tables simple [[http://orgmode.org/org.html#Tables][(docu)]]                         | :PARTLY:         |
+| tables complex ([[http://orgmode.org/org.html#The-Spreadsheet][docu]], [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][tutorial]])              | :PARTLY:         |
+| column view ([[http://orgmode.org/org.html#Column-View][docu]])                           | :FAILS:          |
+| dates & time ([[http://orgmode.org/org.html#Dates-and-Times][docu]])                          | :WORKS:          |
+| clocking time ([[http://orgmode.org/org.html#Clocking-Work-Time][docu]])                         | :PARTLY:         |
+| images                                       | :PARTLY:         |
+| Macro replacement                            | :FAILS:          |
 #+END:
 
 Please note that there is a *much* better syntax overview and compatibility list on [[https://gitlab.com/publicvoit/orgdown/-/blob/master/doc/Tool-Support.org][the Orgdown project page]].
@@ -573,6 +574,16 @@ Embedding image using HTML block:
 Embedding image using =file= link:
 
 [[file:Orgdown logo - 64x64 white background.png]]
+
+** Macro replacement
+:PROPERTIES:
+:CREATED:  [2024-11-21 Thu 17:31]
+:END:
+
+- [[https://orgmode.org/org.html#Macro-Replacement][Documentation in the Org-mode manual]]
+
+#+MACRO: poem Rose is $1, violet's $2. Life's ordered: Org assists you.
+{{{poem(red,blue)}}}
 
 * Parsers
 
